@@ -1,0 +1,55 @@
+@font-face {
+    font-family: RobotoItalic;
+    src: url(../fonts/Roboto-Italic.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: LexendPeta;
+    font-size: 16px;
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 10px 0;
+}
+
+.img{
+    &-logo{
+        max-width: 80px;
+        margin-left: 10px;
+    }
+}
+
+.logo{
+    &-link{
+        color: #fff;
+    }
+    &-text{
+        font-size: 18px;
+        margin-top: -10px;
+        
+    }
+
+}
