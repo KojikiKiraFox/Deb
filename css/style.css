@@ -361,6 +361,7 @@ template {
 html {
   font-family: LexendPeta;
   font-size: 16px;
+  background: #FFB273;
 }
 
 ul,
@@ -377,6 +378,34 @@ a {
 
 .section {
   padding: 10px 0;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  top: 30%;
+  left: 38%;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  top: 30%;
+  right: 38%;
 }
 
 .img-logo {
@@ -444,5 +473,32 @@ a {
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+}
+
+.algoritm-items {
+  text-align: center;
+}
+
+.algoritm-itm {
+  margin-top: 25px;
+}
+
+.algoritm-item {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.algoritm-item:not(:first-child) {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.algoritm-item:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: solid #000 2px;
+  rotate: 40deg;
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,7 @@
 html {
     font-family: LexendPeta;
     font-size: 16px;
+    background: #FFB273;
 }
 
 ul,
@@ -33,6 +34,31 @@ a {
 
 .section{
     padding: 10px 0;
+    &-title{
+        text-align: center;
+        position: relative;
+        font-size: 25px;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius:50%;
+            background: #000;
+            top: 30%;
+            left: 38%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius:50%;
+            background: #000;
+            top: 30%;
+            right: 38%;
+        }
+    }
 }
 
 .img{
@@ -51,5 +77,5 @@ a {
         margin-top: -10px;
         
     }
-
 }
+
