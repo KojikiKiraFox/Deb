@@ -38,26 +38,26 @@ a {
         text-align: center;
         position: relative;
         font-size: 25px;
-        &::after{
-            content: '';
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius:50%;
-            background: #000;
-            top: 30%;
-            left: 38%;
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius:50%;
-            background: #000;
-            top: 30%;
-            right: 38%;
-        }
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     width: 10px;
+        //     height: 10px;
+        //     border-radius:50%;
+        //     background: #000;
+        //     top: 30%;
+        //     left: 38%;
+        // }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     width: 10px;
+        //     height: 10px;
+        //     border-radius:50%;
+        //     background: #000;
+        //     top: 30%;
+        //     right: 38%;
+        // }
     }
 }
 

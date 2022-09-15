@@ -44,20 +44,72 @@
         <section class="algoritm section">
             <div class="container">
                 <h2 class="section-title">Алгоритм бронирования</h2>
-                <div class="algoritm-itm">
-                    <ul class="algoritm-items">
-                        <li class="algoritm-item">Чтобы воспользоваться услугами компании необходимо:</li>
-                        <li class="algoritm-item">Выбрать даты и место самоизоляции;</li>
-                        <li class="algoritm-item">Выбрать количество проживающих;</li>
-                        <li class="algoritm-item">Выбрать желаемый кемпинг, соответствующий условиям выше;</li>
-                        <li class="algoritm-item">Выбрать понравившийся дом-бочку на территории кемпинга;</li>
-                        <li class="algoritm-item">Определить перечень дополнительных услуг;</li>
-                        <li class="algoritm-item">Оформить заказ.</li>
-                    </ul>
+                <div class="algoritm-items">
+                    <div class="algoritm-block"><p class="algoritm-block-txt">Выбрать даты и место самоизоляции </p></div>
+                    <div class="algoritm-block"><p class="algoritm-block-txt">Выбрать количество проживающих </p></div>
+                    <div class="algoritm-block"><p class="algoritm-block-txt">Выбрать желаемый кемпинг, соответствующий условиям выше </p></div>
+                    <div class="algoritm-block"><p class="algoritm-block-txt">Выбрать понравившийся дом-бочку на территории кемпинга </p></div>
+                    <div class="algoritm-block"><p class="algoritm-block-txt">Определить перечень дополнительных услуг </p></div>
+                    <div class="algoritm-block"><p class="algoritm-block-txt">Оформить заказ </p></div>
                 </div>
             </div>
         </section>
         <!-- /.algoritm section -->
+
+        <section class="search section">
+            <div class="container">
+
+                <form action='search.html' method="POST">
+                    <label for='region'>Выбор региона:</label>
+                    <select id='region'>
+                        <option>Омская область</option>
+                        <option>Красноярский край</option>
+                        <option>Алтайский край</option>
+                    </select><br><br>
+                    <label for='date1'>Дата заселения:</label>
+                    <input type='date' min='2022-09-15' max='2023-12-31' id='date1'><br><br>
+                    <label for='date2'>Дата выселения:</label>
+                    <input type='date' min='2022-09-15' max='2023-12-31' id='date2'><br><br>
+                    <label for='chelovek'>Количество человек:</label>
+                    <input type='number' min='1' max='5' id='chelovek'><br><br>
+                    <input type='submit' value='Поиск' class='btn'>
+                </form>
+            </div>
+        </section>
+        <!-- /.search -->
+
+        <section class="subs section">
+            <div class="container">
+                <h2 class="section-title subs-title">Хотите первыми получать новости</h2>
+                <form action="#" class="subs-form">
+                    <input type="email" class="subs-email  subs-input" id="subEmail">
+                    <input type="submit" class="subs-submit subs-input">
+                </form>
+            </div>
+        </section>
+        <!-- /.subs section -->
+
+
     </main>
+    <!-- /.main -->
+
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer-items">
+                <nav class="footer-nav">
+                    <ul class="footer-nav-items">
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Login</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Sing up</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Contact</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">News</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Return</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Feedback</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+78001001010" class="telefone">8 (800) 100-10-10</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
