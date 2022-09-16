@@ -97,10 +97,8 @@ input{
 
 input[type="submit"]{
     padding: 10px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 1);
     border: 1px solid #000;
     transition: .3s;
-    &:hover{
-        background: rgba(255, 255, 255, 1);
-    }
+
 }

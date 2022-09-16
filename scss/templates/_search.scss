@@ -2,21 +2,27 @@
     &-title{
         margin-bottom: 15px;
     }
-    &-form{
+    &-item{
         border: 2px solid $white;
+        display: flex;
+    }
+    &-img{
+        max-width: 400px;
+    }
+    &-form{
         padding: 25px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: space-between;
         align-items: center;
         input{
             display: flex;
-            width: 170px;
+            width: 150px;
             height: 50px;
         }
         input[type="submit"]{
-            margin: 15px auto 0;
             text-align: center;
+            margin: 0 auto;
         }
         select{
             width: 170px;

@@ -423,14 +423,10 @@ input:focus {
 
 input[type="submit"] {
   padding: 10px;
-  background: rgba(255, 255, 255, 0.6);
+  background: white;
   border: 1px solid #000;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-input[type="submit"]:hover {
-  background: white;
 }
 
 .header {
@@ -513,12 +509,67 @@ input[type="submit"]:hover {
   font-size: 20px;
 }
 
+.stock {
+  padding: 25px 0;
+}
+
+.stock-item {
+  border-bottom: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stock-item-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.stock-item-subtitle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.stock-item-img {
+  max-width: 400px;
+  max-height: 220px;
+}
+
+.stock-item-image {
+  margin: auto 0;
+  margin-right: 50px;
+}
+
+.stock-item-text-bold {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.stock-text {
+  font-size: 18px;
+}
+
 .search-title {
   margin-bottom: 15px;
 }
 
-.search-form {
+.search-item {
   border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-img {
+  max-width: 400px;
+}
+
+.search-form {
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,18 +588,38 @@ input[type="submit"]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 150px;
   height: 50px;
 }
 
 .search-form input[type="submit"] {
-  margin: 15px auto 0;
   text-align: center;
+  margin: 0 auto;
 }
 
 .search-form select {
   width: 170px;
   height: 50px;
+}
+
+.subs-items {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subs input[type="email"] {
+  padding: 11px;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.subs input[type="submit"] {
+  margin-left: -20px;
+  border-radius: 30px;
 }
 
 .footer {
@@ -581,3 +652,4 @@ input[type="submit"]:hover {
 .footer-nav-item:not(:last-child) {
   margin-right: 15px;
 }
+/*# sourceMappingURL=style.css.map */
