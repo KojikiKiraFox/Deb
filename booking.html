@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header section">
+        <div class="container">
+            <div class="header-items">
+                <a href="./index.html" class="logo-link">
+                    <img src="./img/logo.png" alt="Logo" class="img-logo">
+                    <p class="logo-text">Alone at home</p>
+                </a>
+                <nav class="header-items-nav">
+                    <ul class="header-nav-items">
+                        <li class="header-nav-item"><a href="#" class="header-nav-link">Акции</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav-link">Поиск</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav-link">Управление бронированием</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /.header section -->
+
+    <main>
+        <section class="booking-people section">
+            <div class="container">
+                <h2 class="section-title booking-title">Данные о постояльцах</h2>
+                <div class="booking-people--half">
+                    <button class="btn booking-people__btn booking-people__btn--plus">Добавить постояльца</button>
+                    <button class="btn booking-people__btn booking-people__btn--minus">Убрать постоялца</button>
+                </div>
+                <form action="#" class="booking-people-form">
+                    <div class="booking-people-form--half">
+                        <div class="booking-people-group booking-people-group--half">
+                            <label for="bookingPeopleSurname" class="booking-people__label">Фамилия</label>
+                            <input type="text" class="booking-people__input" id="bookingPeopleSurname" value="Иванов">
+                        </div>
+                        
+                        <div class="booking-people-group booking-people-group--half">
+                            <label for="bookingPeopleSurname" class="booking-people__label">Имя</label>
+                            <input type="text" class="booking-people__input" id="bookingPeopleSurname" value="Иван">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="booking-people-group">
+                        <label for="bookingPeoplePatr" class="booking-people__label">Отчество</label>
+                        <input type="text" class="booking-people__input" id="bookingPeoplePatr" value="Иванович">
+                    </div>
+                    
+                    <div class="booking-people-group">
+                        <label for="bookingPeopleBorn" class="booking-people__label">Дата рождения</label>
+                        <input type="date" class="booking-people__input" id="bookingPeopleBorn">
+                    </div>
+                    
+                    <div class="booking-people-group">
+                        <label for="bookingPeopleDocs" class="booking-people__label">Номер документа</label>
+                        <input type="text" class="booking-people__input" id="bookingPeopleDocs">
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+
+        <section class="booking section" id="booking">
+            <div class="container ">
+                <h2 class="booking__title">Ваши данные о заказе</h2>
+                <form action="#" class="booking-form">
+                    <div class="booking-form-group">
+                        <label for="bookingFormRegion" class="booking-form__label">Выбранный регион</label>
+                        <input type="text" class="booking-form__input" id="bookingFormRegion" value="Омская область" readonly="">
+                    </div>
+                    
+                    <div class="booking-form-group">
+                        <label for="bookingFormAddress" class="booking-form__label">Выбранный адрес</label>
+                        <input type="text" class="booking-form__input" id="bookingFormAddress" value="г. Омск, ул. Пушкина д.1" readonly="">
+                    </div>
+                    
+                    <div class="booking-form--half">
+                        <div class="booking-form-group booking-form-group--half">
+                            <label for="bookingFormDateIn" class="booking-form__label">Выбранная дата заселения</label>
+                            <input type="text" class="booking-form__input booking-form__input--half" id="bookingFormDateIn" value="01.01.2022" readonly="">
+                        </div>
+                        
+                        <div class="booking-form-group booking-form-group--half">
+                            <label for="bookingFormDateOut" class="booking-form__label">Выбранная дата выселения</label>
+                            <input type="text" class="booking-form__input booking-form__input--half" id="bookingFormDateOut" value="01.01.2022" readonly="">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="booking-form-group">
+                        <label for="bookingFormCost" class="booking-form__label">Стоимость</label>
+                        <input type="text" class="booking-form__input" id="bookingFormCost" value="0" readonly="">
+                    </div>
+                    
+                    <h3 class="extra__title">Дополнительные услуги</h3>
+                    <div class="extra-form-group">
+                        <input type="checkbox" class="extra-form__input" id="bookingExtraMed">
+                        <label for="bookingExtraMed" class="extra-form__label">Медицинское сопровождение</label>
+                    </div>
+                    
+                    <div class="extra-form-group">
+                        <input type="checkbox" class="extra-form__input" id="bookingExtraCur">
+                        <label for="bookingExtraCur" class="extra-form__label">Курьерские услуги</label>
+                    </div>
+                    
+                    <div class="extra-form-group">
+                        <input type="checkbox" class="extra-form__input" id="bookingExtraFeed">
+                        <label for="bookingExtraFeed" class="extra-form__label">Питание </label>
+                    </div>
+                    
+                    <div class="cost">
+                        <div class="cost-group">
+                            <label for="bookingCost" class="cost__label">Итоговая стоимость</label>
+                            <input type="text" class="booking-people__input" id="bookingCost" readonly="">
+                        </div>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer-items">
+                <nav class="footer-nav">
+                    <ul class="footer-nav-items">
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Login</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Sing up</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Contact</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">News</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Return</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Feedback</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+78001001010" class="telefone">8 (800) 100-10-10</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

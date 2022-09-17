@@ -38,6 +38,7 @@ a {
         text-align: center;
         position: relative;
         font-size: 25px;
+        margin-bottom: 20px;
         // &::after{
         //     content: '';
         //     position: absolute;
@@ -101,4 +102,10 @@ input[type="submit"]{
     border: 1px solid #000;
     transition: .3s;
 
+}
+
+.btn{
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: #fff;
 }

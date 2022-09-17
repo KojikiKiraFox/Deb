@@ -1,0 +1,23 @@
+.choice{
+    &-block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__list{
+            list-style-type: none;
+            font-size: 24px;
+        }
+        &-title{
+            padding: 0;
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        &__item{
+            padding-left: 35px;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

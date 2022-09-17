@@ -1,0 +1,57 @@
+.booking-people{
+    padding: 50px 0;
+    padding-bottom: 20px;
+    &-container{
+        padding-top: 20px;
+        border-bottom: 3px solid #fff;
+    }
+    &__title{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__btn{
+        padding: 8px 24px;
+        border-radius: 25px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 25px;
+        width: 90%;
+        &--half{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &-group{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        &--half{
+            max-width: 630px;
+            width: 100%;
+        }
+    }
+    &__label{
+            margin-bottom: 5px;
+            font-size: 20px;
+    }
+    &__input{
+        height: 35px;
+        text-indent: 10px;
+        font-size: 20px;
+    }
+    &--half{
+        display: flex;
+        justify-content: center;
+    }
+}
